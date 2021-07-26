@@ -1,0 +1,133 @@
+ion-header {
+  ion-toolbar {
+    height: 50px;
+    color: #ffffff;
+    // padding-top: 3px;
+    // --background: var(--ion-color-success);
+    --background: var(--mytheme);
+    text-align: center;
+
+    ion-label {
+      font-size: 25px;
+
+    }
+
+    ion-icon {
+      font-size: 30px;
+      color: #ffffff;
+    }
+
+    ion-back-button {
+      color: #ffffff;
+    }
+  }
+
+
+}
+
+* {
+  font-family: Noto Sans Lao;
+  // --background-color: var(--mytheme);
+
+}
+
+ion-content {
+  .image {
+    text-align: center;
+
+    ion-card {
+      width: 160px;
+      height: 140px;
+      // padding-top: 50px;
+      box-shadow: 0px 2px 7px 3px #d6e0d6;
+      background: linear-gradient(to bottom, #ffffff, #f5fcfb, #f5fcfb, #dffdff);
+
+      .myImage {
+        height: 100%;
+
+        #imageNo {
+          width: 160px;
+          height: 160px;
+        }
+
+        ion-img {
+          height: 100%;
+          height: 100%;
+        }
+      }
+
+      .myIcon {
+        width: 10%;
+        margin-top: -45px;
+        margin-left: 110px;
+
+        #camera {
+          font-size: 50px;
+          // color: var(--ion-color-success);
+          color: white;
+        }
+      }
+
+
+
+
+    }
+
+    #nameImage {
+      font-size: 20px;
+      margin-top: -20px;
+    }
+  }
+
+  .myform {
+    margin-top: -10px;
+    margin-right: 5px;
+
+    ion-label {
+      font-family: Noto Sans Lao;
+
+    }
+
+    ion-item {
+      ion-input {
+        margin-top: 0px;
+      }
+
+      // ion-label {
+      // margin-top: px;
+      // }
+    }
+
+    ion-item:active {
+      --border-color: var(--mytheme);
+
+      ion-label {
+        color: var(--mytheme);
+      }
+    }
+
+  }
+
+  .myButton {
+    margin-top: 10px;
+
+    #cancel {
+      ion-button {
+        --background: var(--ion-color-warning);
+        border-radius: 30px;
+        box-shadow: 0px 1px 5px 1px #c7c3c3;
+
+      }
+    }
+
+    #save {
+      ion-button {
+        // --background: var(--mytheme);
+        --background: var(--ion-color-success);
+        border-radius: 30px;
+        box-shadow: 0px 1px 5px 1px #c7c3c3;
+
+      }
+    }
+  }
+}

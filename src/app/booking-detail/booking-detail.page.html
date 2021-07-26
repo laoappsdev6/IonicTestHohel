@@ -1,0 +1,105 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="ກັບຄືນ"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      <h4>ລາຍລະອຽດການຈອງ</h4>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="div1">
+    <ion-card>
+      <ion-grid>
+        <ion-row id="button">
+          <ion-col></ion-col>
+          <ion-col>
+            <ion-button *ngIf="status ==='confirm'" expand="block" (click)="alertConfrim()">ຢືນຢັນ</ion-button>
+            <ion-button *ngIf="status ==='receive'" expand="block" (click)="alertReceives()">ຮັບເງິນ</ion-button>
+          </ion-col>
+          <ion-col></ion-col>
+        </ion-row>
+        <ion-row *ngIf=" status==='success'" id="success" size="12">
+          <ion-col size="4" id="icon">
+            <ion-icon name="checkmark-circle-sharp"></ion-icon>
+          </ion-col>
+          <ion-col size="8" id="label">
+            <h1>ການຈອງ ສຳເລັດ</h1>
+          </ion-col>
+        </ion-row>
+        <ion-row id="description">
+          <ion-col *ngIf="status ==='confirm'">
+            <p>ກະລຸນາກົດປຸ່ມ ຢືນຢັນ ເພື່ອຢືນຢັນການຈອງ ຂອງລຸກຄ້າ</p>
+          </ion-col>
+          <ion-col *ngIf="status ==='receive'">
+            <p>ກະລຸນາກົດປຸ່ມ ຮັບເງິນ ເພື່ອຢືນຢັນການຈ່າຍເງີນ ຂອງລູກຄ້າ</p>
+          </ion-col>
+          <ion-col *ngIf="status ==='success'">
+            <p>ຂໍສະແດງຄວາມຍິນດີ ຢືນຢັນການຈອງ ສຳເລັດແລ້ວ</p>
+          </ion-col>
+        </ion-row>
+        <ion-row id="customer">
+          <ion-col size="12">
+            <ion-label><strong>ລະຫັດ: </strong>87945468</ion-label>
+          </ion-col>
+          <ion-col size="12">
+            <ion-label><strong>ລູກຄ້າ: </strong>ທ້າວ ສົມຄິດ ສິວິໄລ</ion-label>
+          </ion-col>
+          <ion-col size="12">
+            <ion-label><strong>ເບີໂທ: </strong>02099887744 </ion-label>
+          </ion-col>
+          <ion-col size="12">
+            <ion-label><strong>ວັນທີຈອງ: </strong>20/10/2021 20:00:00 PM </ion-label>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+  </div>
+  <div class="div2">
+    <ion-list lines="none">
+      <ion-list-header>
+        <ion-label>ລາຍລະອຽດ</ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-label>ປະເພດຫ້ອງ</ion-label>
+        <ion-note slot="end" color>ພັດລົມ</ion-note>
+      </ion-item>
+      <ion-item>
+        <ion-label>ປະເພດຕຽງ</ion-label>
+        <ion-note slot="end">ຕຽງຄູ່</ion-note>
+      </ion-item>
+      <ion-item>
+        <ion-grid>
+          <ion-row>
+            <ion-col size="6" id="start">
+              <ion-label><b>ຈຳນວນ: </b> 4 ຫ້ອງ</ion-label>
+            </ion-col>
+            <ion-col size="6" id="end">
+              <ion-label><b>ວາລາພັກເຊົາ: </b> 10 ມື້</ion-label>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+    </ion-list>
+  </div>
+  <div class="div3">
+    <ion-list>
+      <ion-list-header>
+        <ion-label>ລາຄາ</ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-label>ວັນທີເຂົ້າ</ion-label>
+        <ion-note slot="end" color="success">20/10/2021</ion-note>
+      </ion-item>
+      <ion-item>
+        <ion-label>ວັນທີອອກ</ion-label>
+        <ion-note slot="end" color="primary">30/10/2021</ion-note>
+      </ion-item>
+      <ion-item>
+        <ion-label>ລາມເປັນງິນ</ion-label>
+        <ion-note slot="end" color="secondary">1.5000.000 ກີບ</ion-note>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

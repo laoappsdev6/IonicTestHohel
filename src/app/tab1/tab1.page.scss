@@ -1,0 +1,150 @@
+* {
+  font-family: Noto Sans Lao;
+  --background-color: var(--mytheme);
+
+}
+
+// ion-content {
+//   --background: var(--mytheme) !important;
+// }
+
+ion-header {
+  ion-toolbar {
+    height: 50px;
+    color: #ffffff;
+    padding-top: 3px;
+    --background: var(--mytheme);
+
+    ion-label {
+      font-size: 25px;
+    }
+
+    ion-icon {
+      font-size: 30px;
+      color: #ffffff;
+    }
+  }
+
+
+}
+
+ion-content {
+
+  .myHeader {
+    position: relative;
+
+    position: relative;
+    height: 120px;
+    // margin-bottom: 2px;
+    background: linear-gradient(to bottom, #ffffff, #f5fcfb, #eaf9fa, #bef8fc);
+
+    color: var(--ion-color-mytheme);
+    // box-shadow: 1px 1px 5px 1px #c3c4c3;
+
+    #icon1 {
+      margin-top: 10px;
+      font-size: 60px;
+      text-align: right;
+      color: #a8a4a4
+    }
+
+    #icon2 {
+      margin-top: 15px;
+      font-size: 60px;
+      color: #a8a4a4
+    }
+
+    .title {
+      margin-top: -2px;
+
+      .label1 {
+        font-size: 27px;
+      }
+
+      .label2 {
+        margin-top: -10px;
+
+        font-size: 20px;
+      }
+
+      .label3 {
+        font-size: 15px;
+
+        ion-icon {
+          color: var(--mytheme);
+        }
+      }
+    }
+
+    // }
+  }
+
+  .map {
+    width: 100%;
+    padding: 5px;
+    height: 200px;
+    // height: 100%;
+    font-size: 100px;
+    background-color: var(--mytheme);
+
+    #myMap {
+      width: 100%;
+      height: 100%;
+      // height: 100%;
+      font-size: 100px;
+      background-color: var(--mytheme);
+    }
+  }
+
+  .review {
+
+
+
+    #valueVIP {
+      font-size: 20px;
+      color: var(--ion-color-success);
+    }
+  }
+
+  .head {
+    margin-left: 5px;
+    margin-bottom: -25px;
+
+    p {
+      font-family: BoonHome !important;
+      font-size: 20px;
+
+    }
+  }
+
+  ion-list {
+    ion-thumbnail {
+      width: 120px;
+      height: 90px;
+      margin-left: -7px;
+
+      img {
+        // border-radius: 50px; 
+
+      }
+    }
+
+    .room {
+      #key {
+        font-size: 21px;
+      }
+
+      #value {
+        font-size: 20px;
+      }
+    }
+
+    .star {
+      ion-icon {
+        font-size: 20px;
+        color: var(--mytheme)
+      }
+
+    }
+  }
+}

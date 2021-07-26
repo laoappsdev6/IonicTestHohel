@@ -1,0 +1,108 @@
+* {
+  font-family: Noto Sans Lao;
+  --background-color: var(--mytheme);
+
+}
+
+ion-content {
+
+  // --background: var(--mytheme) !important;
+  ion-icon {
+    color: var(--mytheme);
+  }
+
+  ion-thumbnail {
+    width: 70px;
+    height: 70px;
+
+    img {
+      border-radius: 50px;
+      width: 70px;
+      height: 70px;
+
+    }
+  }
+
+  .head {
+    #key {
+      font-size: 19px;
+    }
+
+    #value {
+      font-size: 18px;
+    }
+  }
+
+  .date {
+    text-align: right;
+    font-size: 15px;
+    margin-top: 5px
+  }
+
+
+  .customer {
+    margin-top: -8px;
+
+    #key {
+      font-size: 17px;
+    }
+
+    #value {
+      font-size: 16px;
+    }
+  }
+
+  .status {
+    margin-top: -5px;
+
+    #no {
+      color: rgb(228, 163, 42);
+      font-size: 15px;
+
+    }
+
+    #ok {
+      color: var(--ion-color-success);
+      font-size: 15px;
+
+    }
+  }
+
+  .payment {
+    margin-top: -5px;
+
+    #no {
+      color: rgb(228, 8, 8);
+      font-size: 15px;
+
+    }
+
+    #ok {
+      color: var(--ion-color-success);
+      font-size: 15px;
+
+    }
+  }
+}
+
+ion-header {
+  ion-toolbar {
+    height: 50px;
+    color: #ffffff;
+    padding-top: 3px;
+    --background: var(--mytheme);
+    text-align: right;
+
+    ion-label {
+      font-size: 25px;
+
+    }
+
+    ion-icon {
+      font-size: 30px;
+      color: #ffffff;
+    }
+  }
+
+
+}

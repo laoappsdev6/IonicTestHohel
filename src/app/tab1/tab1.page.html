@@ -1,0 +1,157 @@
+<!-- <ion-header>
+  <ion-toolbar class="ion-no-border">
+    <ion-title>
+      <h3>ບໍລິການໂຮງແຮມ</h3>
+    </ion-title>
+    <ion-buttons slot="primary">
+      <ion-button (click)="goToLogOut()">
+        <ion-icon slot="icon-only" name="walk"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header> -->
+<ion-content [fullscreen]="true">
+  <!-- <div class="myHeader">
+    <ion-grid>
+      <ion-row align="center">
+        <ion-col id="icon1" size="3">
+          <ion-icon name="home-outline"></ion-icon>
+        </ion-col>
+        <ion-col id="icon2" size="1">
+          <ion-icon name="pause-outline"></ion-icon>
+        </ion-col>
+        <ion-col class="title" size="8">
+          <ion-label class="label1">ສະບາຍດີ</ion-label><br>
+          <ion-label class="label2">ໂຮງແຮມລາວວັງຊ້າງ</ion-label><br>
+          <ion-label class="label3">
+            <ion-icon name="location"></ion-icon>ນະຄອນຫຼວງວຽງຈັນ
+          </ion-label>
+        </ion-col>
+      </ion-row>
+    </ion-grid> -->
+  <!-- </div> -->
+  <div class="map">
+    <div id="myMap"> </div>
+  </div>
+  <div class="review">
+    <div class="head">
+      <p>
+        <ion-icon name="star-half"></ion-icon> Review
+      </p>
+    </div>
+    <ion-list>
+      <ion-item lines="full">
+        <ion-thumbnail slot="start" vertical="top">
+          <img src="./../assets/icon/room1.jpg">
+        </ion-thumbnail>
+        <ion-grid>
+          <ion-row>
+            <ion-col class="room">
+              <label id="key">ຫ້ອງ: </label>
+              <label id="value"> ພັດລົມ - ຕຽງຄູ່</label>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="star">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-half"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="comment">
+              <label id="key">ຄຳຄິດເຫັນ: </label>
+              <label id="value">ຫ້ອງງາມດີຢາກໄປຢູ່ເດ 😍</label>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+      <ion-item lines="full">
+        <ion-thumbnail slot="start" vertical="top">
+          <img src="./../assets/icon/room4.jpg">
+        </ion-thumbnail>
+        <ion-grid>
+          <ion-row>
+            <ion-col class="room">
+              <label id="key">ຫ້ອງ: </label>
+              <label id="value"> ພັດລົມ - ຕຽງດ່ຽວ</label>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="star">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-half"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="comment">
+              <label id="key">ຄຳຄິດເຫັນ: </label>
+              <label id="value">ຫ້ອງແຄບເກີນໄປ 👎</label>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+      <ion-item lines="full">
+        <ion-thumbnail slot="start" vertical="top">
+          <img src="./../assets/icon/room2.jpg">
+        </ion-thumbnail>
+        <ion-grid>
+          <ion-row>
+            <ion-col class="room">
+              <label id="key">ຫ້ອງ: </label>
+              <label id="value"> VIP - ຕຽງຄູ່</label>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="star">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="comment">
+              <label id="key">ຄຳຄິດເຫັນ: </label>
+              <label id="value">ງາມເກີ້ນເອົາໃຈໄປເລີຍ 💕</label>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+      <ion-item lines="full">
+        <ion-thumbnail slot="start" vertical="top">
+          <img src="./../assets/icon/room1.jpg">
+        </ion-thumbnail>
+        <ion-grid>
+          <ion-row>
+            <ion-col class="room">
+              <label id="key">ຫ້ອງ: </label>
+              <label id="value"> ພັດລົມ - ຕຽງຄູ່</label>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="star">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-half"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="comment">
+              <label id="key">ຄຳຄິດເຫັນ: </label>
+              <label id="value">ຫ້ອງງາມດີຢາກໄປຢູ່ເດ 😍</label>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

@@ -1,0 +1,202 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <h3>ລາຍການຈອງ</h3>
+    </ion-title>
+  </ion-toolbar>
+</ion-header> -->
+<ion-content [fullscreen]="true">
+  <!-- <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content></ion-refresher-content>
+    </ion-refresher> -->
+  <div class="myList">
+    <ion-list>
+      <ion-item (click)="goToUpdateRoom()" lines="full">
+        <ion-thumbnail slot="start" vertical="top">
+          <img src="./../assets/icon/room1.jpg">
+        </ion-thumbnail>
+        <ion-grid>
+          <ion-row>
+            <ion-col class="room">
+              <label id="key">ຫ້ອງ: </label>
+              <label id="value"> ພັດລົມ</label>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="description">
+              <label id="key">ຕຽງ: </label>
+              <label id="value">ຕຽງຄູ່</label>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="price">
+              <label id="key">ລາຄາ: </label>
+              <label id="value">120,000 ກິບ</label>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+      <ion-item (click)="goToUpdateRoom()" lines="full">
+        <ion-thumbnail slot="start" vertical="top">
+          <img src="./../assets/icon/room2.jpg">
+        </ion-thumbnail>
+        <ion-grid>
+          <ion-row>
+            <ion-col class="room">
+              <label id="key">ຫ້ອງ: </label>
+              <label id="value"> ພັດລົມ</label>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="description">
+              <label id="key">ຕຽງ: </label>
+              <label id="value">ຕຽງດ່ຽວ</label>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="price">
+              <label id="key">ລາຄາ: </label>
+              <label id="value">100,000 ກິບ</label>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+      <ion-item (click)="goToUpdateRoom()" lines="full">
+        <ion-thumbnail slot="start" vertical="top">
+          <img src="./../assets/icon/room3.jpg">
+        </ion-thumbnail>
+        <ion-grid>
+          <ion-row>
+            <ion-col class="room">
+              <label id="key">ຫ້ອງ: </label>
+              <label id="value"> ແອ</label>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="description">
+              <label id="key">ຕຽງ: </label>
+              <label id="value">ຕຽງຄູ່</label>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="price">
+              <label id="key">ລາຄາ: </label>
+              <label id="value">180,000 ກິບ</label>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+      <ion-item (click)="goToUpdateRoom()" lines="full">
+        <ion-thumbnail slot="start" vertical="top">
+          <img src="./../assets/icon/room4.jpg">
+        </ion-thumbnail>
+        <ion-grid>
+          <ion-row>
+            <ion-col class="room">
+              <label id="key">ຫ້ອງ: </label>
+              <label id="value"> ແອ</label>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="description">
+              <label id="key">ຕຽງ: </label>
+              <label id="value">ຕຽງດ່ຽວ</label>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="price">
+              <label id="key">ລາຄາ: </label>
+              <label id="value">150,000 ກິບ</label>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+      <ion-item (click)="goToUpdateRoom()" lines="full">
+        <ion-thumbnail slot="start" vertical="top">
+          <img src="./../assets/icon/room5.jpg">
+        </ion-thumbnail>
+        <ion-grid>
+          <ion-row>
+            <ion-col class="room">
+              <label id="key">ຫ້ອງ: </label>
+              <label id="valueVIP"> VIP</label>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="description">
+              <label id="key">ຕຽງ: </label>
+              <label id="value">ຕຽງຄູ່</label>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="price">
+              <label id="key">ລາຄາ: </label>
+              <label id="value">500,000 ກິບ</label>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+      <ion-item (click)="goToUpdateRoom()" lines="full">
+        <ion-thumbnail slot="start" vertical="top">
+          <img src="./../assets/icon/room6.jpg">
+        </ion-thumbnail>
+        <ion-grid>
+          <ion-row>
+            <ion-col class="room">
+              <label id="key">ຫ້ອງ: </label>
+              <label id="valueVIP"> VIP</label>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="description">
+              <label id="key">ຕຽງ: </label>
+              <label id="value">ຕຽງດ່ຽວ</label>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="price">
+              <label id="key">ລາຄາ: </label>
+              <label id="value">400,000 ກິບ</label>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+      <ion-item (click)="goToUpdateRoom()" lines="full">
+        <ion-thumbnail slot="start" vertical="top">
+          <img src="./../assets/icon/room1.jpg">
+        </ion-thumbnail>
+        <ion-grid>
+          <ion-row>
+            <ion-col class="room">
+              <label id="key">ຫ້ອງ: </label>
+              <label id="value"> ບໍ່ມີພັດລົມ</label>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="description">
+              <label id="key">ຕຽງ: </label>
+              <label id="value">ຕຽງດ່ຽວ</label>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="price">
+              <label id="key">ລາຄາ: </label>
+              <label id="value">50,000 ກິບ</label>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+    </ion-list>
+  </div>
+  <div class="myAdd">
+    <ion-fab vertical="buttom" horizontal="end" slot="fixed" (click)="goToCreateRoom()">
+      <ion-fab-button>
+        <ion-icon name="add"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+    <!-- <ion-infinite-scroll threshold="50px" (ionInfinite)="onScalling($event)" *ngIf="isScalling !== 'stop'">
+            <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Loading more data...">
+            </ion-infinite-scroll-content>
+        </ion-infinite-scroll> -->
+  </div>
+</ion-content>

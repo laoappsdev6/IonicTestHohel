@@ -1,0 +1,142 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+
+
+@font-face {
+  font-family: 'nato-bold';
+  src: url('./assets/fontlao/NotoSansLao-Medium.eot');
+  src: url('./assets/fontlao/NotoSansLao-Medium.eot?') format('embedded-opentype'),
+    url('./assets/fontlao/NotoSansLao-Medium.woff2') format('woff2'),
+    url('./assets/fontlao/NotoSansLao-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto Sans Lao SemBd';
+  src: url('./assets/fontlao/NotoSansLao-SemiBold.eot');
+  src: url('./assets/fontlao/NotoSansLao-SemiBold.eot?') format('embedded-opentype'),
+    url('./assets/fontlao/NotoSansLao-SemiBold.woff2') format('woff2'),
+    url('./assets/fontlao/NotoSansLao-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto Sans Lao';
+  src: url('./assets/fontlao/NotoSansLao-Bold.eot');
+  src: url('./assets/fontlao/NotoSansLao-Bold.eot?') format('embedded-opentype'),
+    url('./assets/fontlao/NotoSansLao-Bold.woff2') format('woff2'),
+    url('./assets/fontlao/NotoSansLao-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto Sans Lao';
+  src: url('./assets/fontlao/NotoSansLao-Regular.eot');
+  src: url('./assets/fontlao/NotoSansLao-Regular.eot?') format('embedded-opentype'),
+    url('./assets/fontlao/NotoSansLao-Regular.woff2') format('woff2'),
+    url('./assets/fontlao/NotoSansLao-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'natolao';
+  src: url('./assets/fontlao/NotoSansLao-Regular.eot');
+  src: url('./assets/fontlao/NotoSansLao-Regular.eot?') format('embedded-opentype'),
+    url('./assets/fontlao/NotoSansLao-Regular.woff2') format('woff2'),
+    url('./assets/fontlao/NotoSansLao-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import "~leaflet/dist/leaflet.css"
+
+// .example {
+//   color: red !important;
+
+//   ion-icon {
+//     color: red !important;
+//   }
+// }
+
+// .example {
+//   color: red !important;
+
+//   ion-icon {
+//     --color: red;
+//   }
+// }
+
+// .example {
+//   --color: red !important;
+
+//   ion-icon {
+//     --color: red !important;
+//   }
+// }
+
+// .example {
+//   --color: red !important;
+
+//   Ion-icon {
+//     color: red;
+//   }
+// }
+
+// .example {
+//   --color: red !important;
+
+//   Ion-icon {
+//     --color: red;
+//   }
+// }
+
+// .example {
+//   Ion-icon {
+//     --color: red !important;
+//   }
+// }
+
+// .example {
+//   --color: red;
+// }
+
+// .example {
+//   --color: red;
+// }
+
+// .example {
+//   color: red !important;
+// }
+
+// .example {
+//   --color: red !important;
+// }

@@ -1,0 +1,180 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <h3>ລາຍການຈອງ</h3>
+    </ion-title>
+  </ion-toolbar>
+</ion-header> -->
+<ion-content [fullscreen]="true">
+  <!-- <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content></ion-refresher-content>
+    </ion-refresher> -->
+  <div>
+    <ion-list>
+      <ion-item (click)="goToDetailConfirm()">
+        <ion-thumbnail slot="start" vertical="top">
+          <img src="./../assets/icon/nouser3.png">
+        </ion-thumbnail>
+        <ion-grid>
+          <ion-row>
+            <ion-col class="head" size="7">
+              <label id="key">ຈຳນວນ: </label>
+              <label id="val"> 2 ຫ້ອງ</label>
+            </ion-col>
+            <ion-col class="date" align="right">
+              <label>2021/02/10</label>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="customer">
+              <label id="key">ລູກຄ້າ: </label>
+              <label id="value">ທ້າວ ເວທີ ສີສຸດໂທ </label>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="status" size="6">
+              <ion-icon name="bed"></ion-icon>
+              <label id="no"> ລໍຖ້າຢືນຢັນ</label>
+            </ion-col>
+            <ion-col class="payment">
+              <ion-icon name="card"></ion-icon>
+              <label id="no"> ຍັງຄ້າງຈ່າຍ</label>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+      <ion-item (click)="goToDetailReceive()">
+        <ion-thumbnail slot="start" vertical="top">
+          <img src="./../assets/icon/user4.jpg">
+        </ion-thumbnail>
+        <ion-grid>
+          <ion-row>
+            <ion-col class="head" size="7">
+              <label id="key">ຈຳນວນ: </label>
+              <label id="val"> 1 ຫ້ອງ</label>
+            </ion-col>
+            <ion-col class="date" align="right">
+              <label>2021/02/10</label>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="customer">
+              <label id="key">ລູກຄ້າ: </label>
+              <label id="value">ທ້າວ ວິໄລພອນ ສີປະເສີດ </label>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="status" size="6">
+              <ion-icon name="bed"></ion-icon>
+              <label id="ok"> ຢືນຢັນສຳເລັດ</label>
+            </ion-col>
+            <ion-col class="payment">
+              <ion-icon name="card"></ion-icon>
+              <label id="no"> ຍັງຄ້າງຈ່າຍ</label>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+      <ion-item (click)="goToDetailSuccess()">
+        <ion-thumbnail slot="start" vertical="top">
+          <img src="./../assets/icon/nouser3.png">
+        </ion-thumbnail>
+        <ion-grid>
+          <ion-row>
+            <ion-col class="head" size="7">
+              <label id="key">ຈຳນວນ: </label>
+              <label id="val"> 7 ຫ້ອງ</label>
+            </ion-col>
+            <ion-col class="date" align="right">
+              <label>2021/02/10</label>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="customer">
+              <label id="key">ລູກຄ້າ: </label>
+              <label id="value">ທ້າວ ວິລຸນ ຈັນທະສອນ </label>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="status" size="6">
+              <ion-icon name="bed"></ion-icon>
+              <label id="ok"> ຢືນຢັນສຳເລັດ</label>
+            </ion-col>
+            <ion-col class="payment">
+              <ion-icon name="card"></ion-icon>
+              <label id="ok"> ຈ່າຍແລ້ວ</label>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+      <ion-item (click)="goToDetailReceive()">
+        <ion-thumbnail slot="start" vertical="top">
+          <img src="./../assets/icon/user.png">
+        </ion-thumbnail>
+        <ion-grid>
+          <ion-row>
+            <ion-col class="head" size="7">
+              <label id="key">ຈຳນວນ: </label>
+              <label id="val"> 1 ຫ້ອງ</label>
+            </ion-col>
+            <ion-col class="date" align="right">
+              <label>2021/02/10</label>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="customer">
+              <label id="key">ລູກຄ້າ: </label>
+              <label id="value">ທ້າວ ວິໄລພອນ ສີປະເສີດ </label>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="status" size="6">
+              <ion-icon name="bed"></ion-icon>
+              <label id="ok"> ຢືນຢັນສຳເລັດ</label>
+            </ion-col>
+            <ion-col class="payment">
+              <ion-icon name="card"></ion-icon>
+              <label id="no"> ຍັງຄ້າງຈ່າຍ</label>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+      <ion-item (click)="goToDetailSuccess()">
+        <ion-thumbnail slot="start" vertical="top">
+          <img src="./../assets/icon/nouser3.png">
+        </ion-thumbnail>
+        <ion-grid>
+          <ion-row>
+            <ion-col class="head" size="7">
+              <label id="key">ຈຳນວນ: </label>
+              <label id="val"> 7 ຫ້ອງ</label>
+            </ion-col>
+            <ion-col class="date" align="right">
+              <label>2021/02/10</label>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="customer">
+              <label id="key">ລູກຄ້າ: </label>
+              <label id="value">ທ້າວ ວິລຸນ ຈັນທະສອນ </label>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="status" size="6">
+              <ion-icon name="bed"></ion-icon>
+              <label id="ok"> ຢືນຢັນສຳເລັດ</label>
+            </ion-col>
+            <ion-col class="payment">
+              <ion-icon name="card"></ion-icon>
+              <label id="ok"> ຈ່າຍແລ້ວ</label>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+    </ion-list>
+    <!-- <ion-infinite-scroll threshold="50px" (ionInfinite)="onScalling($event)" *ngIf="isScalling !== 'stop'">
+            <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Loading more data...">
+            </ion-infinite-scroll-content>
+        </ion-infinite-scroll> -->
+  </div>
+</ion-content>

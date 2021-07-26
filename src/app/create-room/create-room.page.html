@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="ກັບຄືນ"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      <h4>ເພີ່ມຫ້ອງຂອງທ່ານ</h4>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="image">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+        </ion-col>
+        <ion-col>
+          <ion-card (click)="selectImage()">
+            <ion-icon id="image" name="image-outline" *ngIf="haveImage === false"></ion-icon><br>
+            <ion-icon id="camera" name="camera-reverse-outline" *ngIf="haveImage === false"></ion-icon>
+            <ion-img [src]="myImage" *ngIf="haveImage === true"></ion-img>
+          </ion-card>
+        </ion-col>
+        <ion-col>
+        </ion-col>
+      </ion-row>
+      <ion-row id="nameImage">
+        <ion-col>
+          <ion-label>ຮູບພາບ </ion-label>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <div class="myform">
+    <ion-item>
+      <ion-label position="floating">ປະເພດຫ້ອງ</ion-label>
+      <ion-input type="text" clearInput></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">ປະເພດຕຽງ</ion-label>
+      <ion-input type="text" clearInput></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">ລາຄາ</ion-label>
+      <ion-input type="text" clearInput></ion-input>
+    </ion-item>
+  </div><br>
+  <div class="field-wrapper">
+    <input type="text" clearInput>
+    <div class="field-placeholder"><span>ລາຍລະອຽດ</span></div>
+  </div>
+  <div class="myButton">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6" id="cancel">
+          <ion-button shape="round" expand="full" (click)="comeBack()">
+            <ion-icon name="close"></ion-icon> ຍົກເລີກ
+          </ion-button>
+        </ion-col>
+        <ion-col size="6" id="save">
+          <ion-button shape="round" expand="full" (click)="alertSuccess()">
+            <ion-icon name="checkmark-done"></ion-icon> ບັນທຶກ
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>
